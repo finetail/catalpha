@@ -1,7 +1,17 @@
 package catalpha
 
-import "github.com/bwmarrin/discordgo"
+import (
+	"time"
+
+	"github.com/bwmarrin/discordgo"
+)
 
 func Catalpha(m *discordgo.MessageCreate) string {
-	return simpleResponse(m.Content)
+	msg := simpleResponse(m.Content)
+	if msg == "" {
+		if time.Now().Unix()%59 == 0 {
+			msg = "ヤバイですね！"
+		}
+	}
+	return msg
 }
