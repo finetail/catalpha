@@ -10,7 +10,7 @@ func Catalpha(m *discordgo.MessageCreate) string {
 	msg := simpleResponse(m.Content)
 	if msg == "" {
 		if time.Now().Unix()%59 == 0 {
-			msg = "ヤバイですね！"
+			msg = "ヤバイですね☆"
 		}
 	}
 	return msg
