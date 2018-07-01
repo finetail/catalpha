@@ -7,13 +7,13 @@ import (
 	"os/signal"
 	"strings"
 
-	"github.com/aimof/catalpha"
+	"catalphafine"
 	"github.com/bwmarrin/discordgo"
 )
 
 var (
 	token string
-	name  = "catalpha(カタルファちゃん)"
+	name  = "catalpha2"
 )
 
 func main() {
@@ -24,6 +24,7 @@ func main() {
 		log.Printf("\t%v\n", err)
 	}
 	session.Token = token
+
 
 	session.AddHandler(handler)
 
