@@ -7,6 +7,7 @@ RUN apk update --no-cache
 COPY . /go/src/github.com/aimof/catalpha/
 WORKDIR /go/src/github.com/aimof/catalpha/cmd/catalpha/
 
-RUN go build
+RUN dep ensure && \
+    go build
 
 CMD ./catalpha
