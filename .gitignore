@@ -1,0 +1,4 @@
+db/*
+vendor/*
+cmd/catalpha/token.txt
+cmd/catalpha/catalpha
