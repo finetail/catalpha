@@ -1,6 +1,6 @@
 FROM golang:1.10.3-alpine
 
-LABEL maintainer "aimof <aimof.aimof@mgail.com">
+LABEL maintainer "aimof <aimof.aimof@gmail.com>"
 
 RUN apk update --no-cache
 
