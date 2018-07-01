@@ -1,6 +1,8 @@
 package catalpha
 
-import "strings"
+import (
+	"strings"
+)
 
 /*
 	とりあえず、適当に単語を拾って挨拶する機能を作る
